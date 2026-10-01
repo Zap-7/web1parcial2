@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Órbita Física | Laboratorio</title>
+</head>
+
+<body>
+  <!-- Una "mini practica" -->
+  <a href="#inicio" class="volver-arriba" title="Volver arriba">↑</a>
+  <header id="inicio">
+    <h1>Órbita Física</h1>
+    <h2>Laboratorio de lectura</h2>
+    <p>Una guía breve para explorar física con orden y curiosidad.</p>
+  </header>
+
+  <nav class="menu">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li>
+        <a href="#">Contenido</a>
+        <ul class="submenu">
+          <li><a href="articulo.html">Artículo</a></li>
+          <li><a href="laboratorio.html">Laboratorio</a></li>
+        </ul>
+      </li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <hr>
+
+  <main class="contenedor">
+
+    <section class="control-audio">
+      <h3>Ambiente del laboratorio</h3>
+      <p>Activá un ambiente sonoro para acompañar la lectura de esta sección.</p>
+      <audio id="musica" loop>
+        <source src="audio/ambiente.mp3" type="audio/mpeg">
+      </audio>
+      <button id="boton-audio" type="button">
+        🎵 Activar ambiente
+      </button>
+    </section>
+
+    <section>
+      <h2>Recorrido recomendado</h2>
+      <p>
+        Esta página reúne ideas para investigar. No reemplaza un curso real, obviamente, pero ayuda a organizar la
+        lectura y a practicar la observación.
+      </p>
+      <hr>
+      <p>
+        Primero conviene leer la teoría, después buscar un ejemplo y por último intentar explicar el fenómeno con
+        palabras propias.
+      </p>
+    </section>
+
+    <section>
+      <h2>Lista de verificación</h2>
+      <ul>
+        <li>Identificar magnitudes.</li>
+        <li>Reconocer y separar hipótesis de resultados.</li>
+        <li>Revisar unidades antes de concluir.</li>
+      </ul>
+    </section>
+
+    <section>
+      <article>
+        <h2>Mini guía de estudio</h2>
+        <p>
+          Un buen apunte no necesita exceso de texto. Basta con definiciones claras, esquemas y una conclusión final
+          bien
+          redactada.
+        </p>
+        <p>
+          En este punto, <em>la precisión sirve más que la cantidad</em>.
+        </p>
+      </article>
+    </section>
+
+    <aside class="lateral">
+      <h3>Enlace útil</h3>
+      <p>
+        Para ampliar conceptos, mirá la página de <a href="https://es.wikipedia.org/wiki/M%C3%A9todo_cient%C3%ADfico"
+          target="_blank">Método científico en Wikipedia</a>.
+      </p>
+      <div>
+        <span>Consejo:</span> volvé al índice cuando cambies de tema.
+      </div>
+    </aside>
+
+    <section>
+      <aside>
+        <h2>Hablando de laboratorios</h2>
+        <p>
+          El <abbr title="Conseil Européen pour la Recherche Nucléaire"><a
+              href="https://es.wikipedia.org/wiki/Organizaci%C3%B3n_Europea_para_la_Investigaci%C3%B3n_Nuclear"
+              target="_blank">CERN</a></abbr>
+          es la Organización Europea para la Investigación Nuclear, uno de los laboratorios más importantes del mundo
+          con
+          muchos logros increíbles, entre ellos el mas reciente y relevante:
+          <a href="https://es.wikipedia.org/wiki/Bos%C3%B3n_de_Higgs" target="_blank">el bosón de Higgs</a>.
+        </p>
+        <div>
+          <span>Observado:</span> 4 de julio de 2012
+        </div>
+      </aside>
+    </section>
+
+    <section>
+      <img src="img/colisionador.jpg" alt="El Gran Colisionador de Hadrones" width="378.66" height="284">
+      <p>
+        Una imagen del túnel del <a href="https://es.wikipedia.org/wiki/Gran_colisionador_de_hadrones">Gran Colisionador
+          de Hadrones</a>, herramienta utilizada en el descubrimiento antes mencionado.
+      </p>
+    </section>
+
+    <section>
+      <h3>Tabla de descubrimientos importantes</h3>
+      <table class="table table-striped table-hover">
+        <caption>Descubrimientos importantes en la historia de la física</caption>
+        <tr>
+          <th>Descubrimiento</th>
+          <th>Científico</th>
+          <th>Año</th>
+        </tr>
+        <tr>
+          <td>Ley de la gravitación universal</td>
+          <td>Isaac Newton</td>
+          <td>1687</td>
+        </tr>
+        <tr>
+          <td>Teoría de la relatividad especial</td>
+          <td>Albert Einstein</td>
+          <td>1905</td>
+        </tr>
+        <tr>
+          <td>Tabla periódica de los elementos</td>
+          <td>Dmitri Mendeléyev</td>
+          <td>1869</td>
+        </tr>
+        <tr>
+          <td>Núcleo atómico</td>
+          <td>Ernest Rutherford</td>
+          <td>1911</td>
+        </tr>
+        <tr>
+          <td>Primera imagen de un agujero negro</td>
+          <td>Katie Bouman</td>
+          <td>2019</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Contenido multimedia</h2>
+      <h3>Dato curiososo sobre un acelerador de partículas</h3>
+      <video controls poster="img/poster.jpg" width="300">
+        <source src="video/laboratorio.mp4" type="video/mp4">
+        Tu navegador no soporta video.
+      </video>
+      <h3>Video largo, introducción a la física</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/HD0Hv9A3md4?si=M2zhvFESPw8xD39l"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+    </section>
+
+  </main>
+
+  <hr>
+
+  <footer id="pie">
+    <p>Fin del laboratorio de lectura.</p>
+  </footer>
+
+  <script>//admito que esto me lo paso chatgpt, es para activar y desativar la musica de fondo
+    const musica = document.getElementById("musica");
+    const boton = document.getElementById("boton-audio");
+    let reproduciendo = false;
+    boton.addEventListener("click", function () {
+      if (!reproduciendo) {
+        musica.play();
+        boton.textContent = "🔇 Detener ambiente";
+        reproduciendo = true;
+      } else {
+        musica.pause();
+        boton.textContent = "🎵 Activar ambiente";
+        reproduciendo = false;
+      }
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

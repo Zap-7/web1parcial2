@@ -1,0 +1,706 @@
+/* ===========================
+   RESET GENERAL
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* ===========================
+   BODY
+=========================== */
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+
+    background: url("img/fondo.jpg") center center / cover fixed no-repeat;
+
+    color: #222;
+
+    line-height: 1.7;
+
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header {
+
+    background: #14213d;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px;
+
+}
+
+header h2 {
+
+    color: white;
+
+}
+
+/* ===========================
+   TITULOS
+=========================== */
+
+h1 {
+
+    font-size: 3rem;
+
+    letter-spacing: 3px;
+
+    text-shadow: 2px 2px 5px black;
+
+}
+
+h2 {
+
+    color: #14213d;
+
+    margin-bottom: 15px;
+
+}
+
+h3 {
+
+    color: #2b2d42;
+
+    margin-bottom: 10px;
+
+}
+
+/* ===========================
+   MENU
+=========================== */
+
+.menu {
+
+    background: #000;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+}
+
+.menu ul {
+
+    list-style: none;
+
+}
+
+.menu>ul {
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+.menu>ul>li {
+
+    position: relative;
+
+}
+
+.menu a {
+
+    display: block;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 15px 25px;
+
+    font-weight: bold;
+
+    transition: .3s;
+
+}
+
+.menu a:hover {
+
+    background: #fca311;
+
+    color: black;
+
+}
+
+.menu a:active {
+
+    color: red;
+
+}
+
+.menu a:focus {
+
+    outline: 3px solid yellow;
+
+}
+
+/* ===========================
+   SUBMENU
+=========================== */
+
+.submenu {
+
+    display: none;
+
+    position: absolute;
+
+    top: 100%;
+
+    left: 0;
+
+    min-width: 220px;
+
+    background: #14213d;
+
+}
+
+.menu li:hover .submenu {
+
+    display: block;
+
+}
+
+/* ===========================
+   MAIN
+=========================== */
+
+.contenedor {
+
+    width: 90%;
+
+    max-width: 1300px;
+
+    margin: 30px auto;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    align-content: flex-start;
+
+    gap: 25px;
+
+}
+
+/* ===========================
+   SECCIONES
+=========================== */
+
+section {
+
+    flex-grow: 3;
+
+    flex-shrink: 1;
+
+    flex-basis: 700px;
+
+    background: white;
+
+    margin-bottom: 30px;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    border-left: 8px solid #14213d;
+
+    box-shadow: 0 0 12px rgba(0, 0, 0, .15);
+
+}
+
+/* Posicionamiento estático */
+
+article {
+
+    position: static;
+
+}
+
+/* ===========================
+   ASIDE
+=========================== */
+
+.lateral {
+
+    flex-grow: 1;
+
+    flex-shrink: 1;
+
+    flex-basis: 250px;
+
+    order: -1;
+
+    align-self: flex-start;
+
+    background: #fff3cd;
+
+    border: 2px solid orange;
+
+    outline: 3px dashed #ffb703;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    margin-bottom: 30px;
+
+    position: relative;
+
+}
+
+/* ===========================
+   EDICION
+=========================== */
+
+#edicion {
+
+    scroll-margin-top: 100px;
+
+}
+
+/* ===========================
+   IMAGENES
+=========================== */
+
+img {
+
+    max-width: 100%;
+
+    height: auto;
+
+    border-radius: 12px;
+
+    border: 4px solid #14213d;
+
+}
+
+.imagen-izquierda {
+
+    float: left;
+
+    width: 600px;
+
+    margin: 0 20px 20px 0;
+
+}
+
+/* ===========================
+   FIGURE
+=========================== */
+
+figure {
+
+    text-align: center;
+
+}
+
+figcaption {
+
+    margin-top: 15px;
+
+    font-style: italic;
+
+}
+
+/* ===========================
+   LISTAS
+=========================== */
+
+ul {
+
+    margin-left: 30px;
+
+    list-style: square;
+
+}
+
+/* ===========================
+   TABLAS
+=========================== */
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+
+}
+
+th {
+
+    background: #14213d;
+
+    color: white;
+
+    padding: 15px;
+
+}
+
+td {
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    text-align: center;
+
+}
+
+tr:nth-child(even) {
+
+    background: #f5f5f5;
+
+}
+
+tr:hover {
+
+    background: #ffe8a3;
+
+}
+
+/* ===========================
+   BLOCKQUOTE
+=========================== */
+
+blockquote {
+
+    border-left: 6px solid #14213d;
+
+    padding-left: 20px;
+
+    font-style: italic;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer {
+
+    background: #14213d;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+
+}
+
+footer a {
+
+    color: #fca311;
+
+}
+
+/* ===========================
+   DISPLAY
+=========================== */
+
+.inline {
+
+    display: inline;
+
+    background: #ffe8a3;
+
+    padding: 8px;
+
+}
+
+.block {
+
+    display: block;
+
+    background: #bde0fe;
+
+    padding: 10px;
+
+    margin: 10px 0;
+
+}
+
+.inline-block {
+
+    display: inline-block;
+
+    background: #caffbf;
+
+    padding: 10px;
+
+    margin: 5px;
+
+}
+
+/*Diferencia entre visibility y display*/
+
+.oculto {
+
+    visibility: hidden;
+
+}
+
+.no-visible {
+
+    display: none;
+
+}
+
+/* ===========================
+   MULTIMEDIA
+=========================== */
+
+video,
+audio,
+iframe {
+
+    display: block;
+
+    max-width: 100%;
+
+    margin: 20px auto;
+
+    border-radius: 10px;
+
+}
+
+/* ===========================
+   FORMULARIOS
+=========================== */
+
+form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+label {
+
+    font-weight: bold;
+
+}
+
+input,
+select,
+textarea {
+
+    padding: 10px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 1rem;
+
+}
+
+button {
+
+    width: 180px;
+
+    padding: 12px;
+
+    background: #14213d;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+}
+
+button:hover {
+
+    background: #fca311;
+
+    color: black;
+
+}
+
+/* ===========================
+   SELECTORES AVANZADOS
+=========================== */
+
+/* Selector por ID */
+#inicio {
+
+    border-bottom: 4px solid #fca311;
+
+}
+
+/* Descendencia */
+section p {
+
+    text-align: justify;
+
+}
+
+/* Hijo directo */
+section>h2 {
+
+    text-transform: uppercase;
+
+}
+
+/* Hermano adyacente */
+h2+h3 {
+
+    color: #fca311;
+
+}
+
+/* Hermano general */
+h2~p {
+
+    margin-bottom: 10px;
+
+}
+
+/* Elementos pares */
+article:nth-child(even) {
+
+    background: #f8f9fa;
+
+}
+
+/* Primer elemento del menú */
+.menu li:first-child a {
+
+    color: #fca311;
+
+}
+
+/* Último párrafo del footer */
+footer p:last-child {
+
+    font-style: italic;
+
+}
+
+/* Todos los links excepto cuando están en hover */
+.menu a:not(:hover) {
+
+    transition: .3s;
+
+}
+
+/* ===========================
+   PSEUDOELEMENTOS
+=========================== */
+
+h2::before {
+
+    content: "🪐 ";
+
+}
+
+h2::after {
+
+    content: " 🔬";
+
+}
+
+/* ===========================
+   CLEAR
+=========================== */
+
+.clear {
+
+    clear: both;
+
+}
+
+/* ===========================
+   OVERFLOW
+=========================== */
+
+.caja-overflow {
+
+    height: 180px;
+
+    overflow: auto;
+
+    padding: 15px;
+
+    border: 2px solid #14213d;
+
+    background: white;
+
+}
+
+/* ===========================
+   BOTÓN VOLVER ARRIBA
+=========================== */
+
+.volver-arriba {
+
+    position: fixed;
+
+    bottom: 20px;
+
+    right: 20px;
+
+    width: 50px;
+
+    height: 50px;
+
+    background: #14213d;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 1.5rem;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+
+}
+
+.volver-arriba:hover {
+
+    background: #fca311;
+
+    color: black;
+
+}
